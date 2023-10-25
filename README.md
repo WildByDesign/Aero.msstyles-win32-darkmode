@@ -33,3 +33,32 @@ Usage:
 - restart your system
 - run `ThemeTool.exe` again (you don't need Admin this time)
 - select `aero11` theme and press Apply
+
+If you use Windows built-in archive extraction, the archive contents get nested 
+further in an additional `aero11` subfolder. In that case, copy the contents from
+within that folder.
+
+Directory Structure:
+
+```
+C:.
+└───Windows
+    └───Resources
+        └───Themes
+            │   aero11.theme
+            │
+            └───aero11
+                │   aero.msstyles
+                │
+                ├───en-US
+                │       aero.msstyles.mui
+                │
+                ├───Shell
+                │   └───NormalColor
+                │       │   shellstyle.dll
+                │       │
+                │       └───en-US
+                │               shellstyle.dll.mui
+                │
+                └───VSCache
+```
